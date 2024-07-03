@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sudharshan pk</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="../asset/dev logo.png">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Sudharshan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container text-center">
+        <h1>Sudharshan palanikumar</h1>
+        <p>Full Stack Developer</p>
+        <a href="./about.html" class="btn btn-primary">About</a>
+    </div>
+</section>
+
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="./index.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="./about.html">2</a></li>
+      <li class="page-item"><a class="page-link" href="./contact.html">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="./about.html" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2024 Sudharshan palanikumar. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" class="text-primary mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="text-primary mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sudharshan_pk_?igsh=aGJuc2YxOW5sNHRj" class="text-primary mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="linkedin.com/in/sudharshan-palanikumar-b60b9b285" class="text-primary mx-2"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery, Popper.js, and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Custom JavaScript for form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (email && message) {
+            window.location.href = `mailto:sudharshan@example.com?subject=Contact from Portfolio&body=${message}`;
+        } else {
+            alert('Please fill in both fields.');
+        }
+    });
+</script>
+</body>
+</html>

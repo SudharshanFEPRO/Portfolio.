@@ -1,0 +1,108 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('../asset/login.j[eg.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section .btn {
+    font-size: 1.2rem;
+}
+
+.about-section, .skills-section, .projects-section, .contact-section {
+    padding: 60px 0;
+}
+
+.about-section img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skill-list, .project-list, .education-list, .experience-list, .certification-list, .activity-list, .achievement-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li, .project-list li, .education-list li, .experience-list li, .certification-list li, .activity-list li, .achievement-list li {
+    margin-bottom: 10px;
+}
+
+/* Project Card Hover Effect */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover img {
+    opacity: 0.8;
+}
+
+
+.pagination{
+    align-items: center;
+    justify-content:center ;
+
+}
+
+.footer {
+    background: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .social-icons a {
+    margin: 0 5px;
+    color: #007bff;
+}
+
+.footer .social-icons a:hover {
+    color: #0056b3;
+}
